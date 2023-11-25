@@ -1,0 +1,7 @@
+No arquivo contém 2 arquivos para cada item, um .mem e outro .txt
+Comentei alguns dos arquvios txt para ficar mais fácil o entendimento
+
+Aluno: Francisco Gilson Pereira Almeida Filho
+Matricula: 401066
+
+:D

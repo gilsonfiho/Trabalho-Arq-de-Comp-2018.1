@@ -1,0 +1,13 @@
+  0   32 129   LDA 129	// Armazena no acumlador o valor da posição 129
+  2   96       NOT	// Complementa
+  3   48 130   ADD 130	// Soma o valor de 130 ao acumulador 
+  5   48 128   ADD 128	// Soma o valor de 128 ao acumulador 
+  7   16 131   STA 131	// Armazena o valor do acumulador na posição 131
+  9  240       HLT	// Encerra o programa
+ 10    0       NOP
+
+128    3      // Parcela 1 
+129    2      // Parcela 1 
+130    1      // Aux
+131    0      // Subtação
+132    0      

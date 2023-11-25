@@ -1,0 +1,72 @@
+// Codigo//
+
+  0   32 128   LDA 128  // Armazena no acumlador o valor da posição 128
+  2  144  18   JN  18	// Verifica se o valor é negativo, se sim, pula para a posição 18
+  4   16 132   STA 132	// (Se não) Armazena o valor do acumulador na posição 132
+  6   32 129   LDA 129	// Armazena no acumlador o valor da posição 129
+  8  144  52   JN  52	// Verifica se o valor é negativo, se sim, pula para a posição 52
+ 10   16 133   STA 133	// Armazena o valor do acumulador na posição 133
+ 12   48 133   ADD 133	// (Se não) Soma o valor de 133, ou seja, (132 + 133)
+ 14   16 130   STA 130	// Armazena o valor do acumulador na posição 130
+ 16  128  70   JMP 70	// Pula para a posição 70 para verificar se ouve estouro
+ 18   48 135   ADD 135	// Soma o valor de 135 ao acumulador
+ 20   16 132   STA 132	// Armazena o valor do acumulador na posição 132
+ 22   32 129   LDA 129	// Armazena no acumlador o valor da posição 129
+ 24  144  28   JN  28	// Verifica se o valor é negativo, se sim, pula para a posição 28
+ 26  128  40   JMP 40	// (Se não) Pula para a posição 40
+ 28   48 135   ADD 135	// Soma o valor de 135 ao acumulador
+ 30   16 133   STA 133	// Armazena o valor do acumlador a 133
+ 32   48 132   ADD 132	// Soma o valor de 132 ao acumulador
+ 34   48 135   ADD 135	// Soma o valor de 135 ao acumulador
+ 36   16 130   STA 130	// Armazena o valor do acumulador na posição 130
+ 38  128  85   JMP 85	// Pula para a posição 85
+ 40   16 133   STA 133	// Armazena o valor do acumulador na posição 133
+ 42   32 132   LDA 132	// Armazena no acumlador o valor da posição 128
+ 44   96       NOT	// Complementa
+ 45   48 134   ADD 134	// Soma o valor de 134 ao acumulador
+ 47   48 133   ADD 133	// Soma o valor de 133 ao acumulador
+ 49   16 130   STA 130	// Armazena o valor do acumulador na posição 130
+ 51  244       HLT	// Encerra o programa
+ 52   48 135   ADD 135	// Soma o valor de 135 ao acumulador
+ 54   16 133   STA 133	// Armazena no acumlador o valor da posição 128
+ 56   32 133   LDA 133	// Armazena no acumlador o valor da posição 133
+ 58   96       NOT	// Complementa
+ 59   48 134   ADD 134	// Soma o valor de 134 ao acumulador
+ 61   48 132   ADD 132	// Soma o valor de 132 ao acumulador
+ 63   16 130   STA 130	// Armazena o valor do acumulador na posição 130
+ 65  244       HLT	// Encerra o programa
+ 66    0       NOP
+ 67    0       NOP
+ 68    0       NOP
+ 69    0       NOP
+ 70   32 130   LDA 130	// Armazena no acumlador o valor da posição 130
+ 72  144  75   JN  75	// Verifica se o valor é negativo, se sim, pula para a posição 75
+ 74  244       HLT	// Encerra o programa
+ 75   32 135   LDA 135	// Armazena no acumlador o valor da posição 135
+ 77   16 130   STA 130	// Armazena o valor do acumulador na posição 130
+ 79   32 134   LDA 134	// Armazena no acumlador o valor da posição 134
+ 81   16 131   STA 131	// Armazena o valor do acumulador na posição 131
+ 83  128  74   JMP 74	// Pula para a posição 74
+ 85   32 130   LDA 130	// Armazena no acumlador o valor da posição 130
+ 87   96       NOT	// Complementa
+ 88  144  91   JN  91	// Verifica se o valor é negativo, se sim, pula para a posição 91
+ 90  244       HLT	// Encerra o programa
+ 91   32 135   LDA 135	// Armazena no acumlador o valor da posição 135
+ 93   16 130   STA 130	// Armazena o valor do acumulador na posição 130
+ 95   32 134   LDA 134	// Armazena no acumlador o valor da posição 134
+ 97   16 131   STA 131	// Armazena o valor do acumulador na posição 131
+ 99  128  90   JMP 90	// Pula para a posição 90
+
+//Memoria//
+
+128    0      // Parcela 1
+129    0      // Parcela 2
+130    0      // Soma
+131    0      // Estouro
+132    0      // Aux1
+133    0      // Aux2
+134    1      // +1 para complento de 2
+135  128      // +128 para sinal
+136    0      
+137    0      
+138    0      
